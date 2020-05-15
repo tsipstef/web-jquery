@@ -145,6 +145,7 @@ header nav li{
 header nav span{
     color: green;
     margin-left: 20px;
+    transition: opacity .2s ease;
 }
 
 #lead-banner img{
@@ -222,6 +223,7 @@ section#points-of-sale ul{
 #points-of-sale li{
     float: left;
     width: 32%;
+    cursor: pointer;
 }
 
 #points-of-sale li:nth-child(2){
@@ -234,6 +236,7 @@ section#points-of-sale ul{
     font-size: 24px;
     font-weight: normal;
     margin-bottom: 10px;
+
 }
 
 #points-of-sale p{
@@ -350,3 +353,60 @@ section#points-of-sale ul{
     width: 100%;
     height: 100%;
 }
+
+.open{
+  height: auto !important;
+}
+
+.slide-button-up, .slide-button-down, .slide-button-toggle {
+    clear: right;
+    margin-top: 20px;
+    padding: 10px;
+    background: #ccc;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    color: #333;
+    cursor: pointer;
+    width: 140px;
+    text-align: center;
+    margin: 10px auto;
+}
+blockquote {
+    display: none;
+}
+
+blockquote:first-of-type {
+    display: block;
+}
+
+#points-of-sale li p{
+    display: none;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+blockquote {
+    width: 100% !important
+}
+
+

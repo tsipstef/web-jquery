@@ -3,6 +3,10 @@
 <head>
     <title>Green Design</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="scripts/jquery-3.5.1.js"></script>
+    <script src="scripts/responsiveslides.min.js"></script>
+    <script src="scripts/script.js"></script>
+    
 </head>
 
 <body>
@@ -36,8 +40,14 @@
 
     <div id="main-content">
 
+      <div class="button" style="text-align:center; padding:10px;
+      background: orange;">unwrap</div>
+      <div class="slide-button-up">Slide up</div>
+      <div class="slide-button-down">Slide down</div>
+      <div class="slide-button-toggle">Toggle</div>
+
         <div class="wrapper">
-            <section id="points-of-sale">
+            <section id="points-of-sale" style="height: 0px; overflow: hidden;">
                 <h2>Points of Sale</h2>
                 <ul>
                     <li>
@@ -60,7 +70,12 @@
             <section id="clients">
                 <h2>What Our Clients Say</h2>
                 <img src="images/head.png" alt="quote">
-                <blockquote>quatis alique mos et aut occae cum, veliquaspit quo quam, si idem reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut es et l</blockquote>
+                <ul class="rslides">
+                <li><blockquote> “I’m on a whisky diet. I’ve lost three days already.”~ Tommy Cooper</blockquote></li>
+                <li><blockquote>"All happiness depends on a leisurely breakfast."~ John Gunther</blockquote></li>
+                <li><blockquote>"You don't need a silver fork to eat good food." ~ Paul Prudhomme</blockquote></li>
+                <li><blockquote>“I feel bad for people who don’t drink. When they wake up in the morning, that’s as good as they’re going to feel all day.”~ Frank Sinatra</blockquote></li>
+                </ul>
             </section>
             <section id="contact">
                 <h2>Drop Us A Line</h2>
@@ -84,8 +99,6 @@
         </div>
 
     </div>
-    <script src="scripts/jquery-3.5.1.js"></script>
-    <script src="scripts/script.js"></script>
 </body>
 
 </html>
